@@ -23,7 +23,7 @@ const ResultTab = (props) => {
         <tbody>
           {props.data.map((yearlyData) => (
             <tr key={yearlyData.year}>
-            <td>yearlyData.year</td>
+            <td>{yearlyData.year}</td>
             <td>{formatter.format(yearlyData.savingsEndOfYear)}</td>
             <td>{formatter.format(yearlyData.yearlyInterest)}</td>
             <td>{formatter.format(yearlyData.savingsEndOfYear - props.initialValue - yearlyData.yearlyContribution*yearlyData.year)}</td>
