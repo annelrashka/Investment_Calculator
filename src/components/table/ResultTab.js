@@ -4,7 +4,7 @@ import React from "react";
 const ResultTab = (props) => {
   const formatter = new Intl.NumberFormat("en-US", {
     style: "currency",
-    currency: "USD",
+    currency: "IDR",
     minimumFractionDigits: 2,
     maximumFractionDigits: 2
   });
